@@ -1,0 +1,3 @@
+query ($text: String!) {
+	notes_searchNotes(text: $text)
+}
