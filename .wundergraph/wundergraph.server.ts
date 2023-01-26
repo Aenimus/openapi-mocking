@@ -23,7 +23,7 @@ export default configureWunderGraphServer<HooksConfig, InternalClient>(() => ({
 						};
 					}
 
-					notes[noteID] = 'noteception5!';
+					notes[noteID] = `noteception5! - $FOO = ${process.env['FOO']}`
 					const response = await hook.internalClient.queries.NoteByID({
 						input: hook.input
 					});
